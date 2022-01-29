@@ -3,9 +3,9 @@ const  Discord = require('discord.js');
 
 const client = new Discord.Client({intents: 
   [
-    Discord.Intents.FLAGS.GUILDS,
-    Discord.Intents.FLAGS.GUILD_MESSAGES
-    //"GUILDS", "GUILD_MESSAGES"
+    // Discord.Intents.FLAGS.GUILDS,
+    // Discord.Intents.FLAGS.GUILD_MESSAGES
+    "GUILDS", "GUILD_MESSAGES"
   ]});
 
 const webhookClient = new Discord.WebhookClient({ url: process.env.WEBHOOK_URL });
