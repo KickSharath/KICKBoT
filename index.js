@@ -84,7 +84,7 @@ client.on("message", (message) => {
 
     //random
     else if (CMD_NAME === 'random'){
-      const Dhim = ["MG","F","D","S","Good","Remo","Cute","Love","Hate","Gay"];
+      const Dhim = ["MG","F","D","S","Good","Remo","Cute","Love","Hate"];
       const ranDhim = Dhim[Math.floor(Math.random() * Dhim.length)];
       message.channel.send( ranDhim + args);
     }
